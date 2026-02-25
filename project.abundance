@@ -7899,8 +7899,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.4470899470899471,
-              "y": 0.3138888888888889,
+              "x": 0.44907407407407407,
+              "y": 0.3333333333333333,
               "uniqueID": "id-8801",
               "name": "Upright",
               "ioValues": [
@@ -12864,23 +12864,23 @@
                   "uniqueID": "id-8790",
                   "ioValues": [
                     {
-                      "name": "Shape 1",
-                      "ioValue": null
-                    },
-                    {
                       "name": "Shape 2",
                       "ioValue": null
                     },
                     {
                       "name": "Shape 3",
                       "ioValue": null
+                    },
+                    {
+                      "name": "Shape 4",
+                      "ioValue": null
                     }
                   ]
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.5654761904761905,
-                  "y": 0.41388888888888886,
+                  "x": 0.5641534391534392,
+                  "y": 0.4111111111111111,
                   "uniqueID": "id-8795",
                   "ioValues": [
                     {
@@ -12897,14 +12897,14 @@
                     },
                     {
                       "name": "zDist",
-                      "ioValue": 1
+                      "ioValue": 0
                     }
                   ]
                 },
                 {
                   "atomType": "Molecule",
-                  "x": 0.10052910052910052,
-                  "y": 0.825,
+                  "x": 0.3849206349206349,
+                  "y": 0.1861111111111111,
                   "uniqueID": "id-8760",
                   "name": "Arm",
                   "topLevel": false,
@@ -13121,8 +13121,8 @@
                 },
                 {
                   "atomType": "GitHubMolecule",
-                  "x": 0.2506613756613757,
-                  "y": 0.3111111111111111,
+                  "x": 0.48743386243386244,
+                  "y": 0.8972222222222223,
                   "uniqueID": "id-5424",
                   "name": "Maslow_Encoder_Board",
                   "topLevel": false,
@@ -14272,7 +14272,7 @@
                     },
                     {
                       "name": "zDist",
-                      "ioValue": 1
+                      "ioValue": 0
                     }
                   ]
                 },
@@ -14312,13 +14312,13 @@
                     {
                       "name": "Shape 2",
                       "ioValue": {
-                        "geometry": "extrude-move-rectangle-8-14-1-21-0-{\"origin\":[0,0,1],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-10",
+                        "geometry": "extrude-move-rectangle-8-14-1-21-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-11",
                         "dimension": "3D",
                         "plane": {
                           "origin": [
                             0,
                             0,
-                            1
+                            0
                           ],
                           "xDir": [
                             1,
@@ -14351,7 +14351,7 @@
                     },
                     {
                       "name": "height",
-                      "ioValue": 10
+                      "ioValue": 11
                     }
                   ]
                 },
@@ -14386,7 +14386,7 @@
                   "ap2ID": "id-8795"
                 },
                 {
-                  "ap2Name": "Shape 1",
+                  "ap2Name": "Shape 4",
                   "ap1ID": "id-5424",
                   "ap2ID": "id-8790"
                 },
@@ -14435,8 +14435,8 @@
             },
             {
               "atomType": "ExtractTag",
-              "x": 0.5509259259259259,
-              "y": 0.425,
+              "x": 0.5548941798941799,
+              "y": 0.44722222222222224,
               "uniqueID": "id-26415",
               "name": "Extract Tag",
               "ioValues": [
@@ -14447,6 +14447,36 @@
               ],
               "tag": "Arm Plastic",
               "tagIndex": 0
+            },
+            {
+              "atomType": "Export",
+              "x": 0.6501322751322751,
+              "y": 0.3666666666666667,
+              "uniqueID": "id-26419",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "File Type",
+                  "ioValue": "STL",
+                  "currentEquation": "STL"
+                },
+                {
+                  "name": "Resolution (dpi)",
+                  "ioValue": 96
+                },
+                {
+                  "name": "Part Name",
+                  "ioValue": "Motor Part",
+                  "currentEquation": "Motor Part"
+                }
+              ],
+              "type": null,
+              "resolution": 96,
+              "importIndex": 0,
+              "partName": "Motor Part"
             }
           ],
           "allConnectors": [
@@ -14559,6 +14589,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-4530",
               "ap2ID": "id-5575"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-26415",
+              "ap2ID": "id-26419"
             }
           ],
           "fileTypeVersion": 1
