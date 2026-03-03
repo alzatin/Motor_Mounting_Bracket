@@ -4857,7 +4857,7 @@
             },
             {
               "name": "height",
-              "ioValue": 42
+              "ioValue": 46
             }
           ]
         },
@@ -4881,8 +4881,7 @@
             },
             {
               "name": "zDist",
-              "ioValue": -10,
-              "currentEquation": "-10"
+              "ioValue": -13
             }
           ]
         },
@@ -4895,7 +4894,7 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "move-extrude-rectangle-500-500-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-42-0-0--10",
+                "geometry": "move-extrude-rectangle-500-500-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-46-0-0--13",
                 "dimension": "3D",
                 "plane": {
                   "origin": [
