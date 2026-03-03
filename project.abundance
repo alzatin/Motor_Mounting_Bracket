@@ -1101,6 +1101,10 @@
                 {
                   "name": "distZ",
                   "ioValue": 31
+                },
+                {
+                  "name": "Shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ],
               "codeVersion": 1,
@@ -1166,10 +1170,6 @@
                 {
                   "name": "distZ",
                   "ioValue": 0
-                },
-                {
-                  "name": "Shape",
-                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ],
               "codeVersion": 1,
@@ -3854,6 +3854,16 @@
                           "x": 0.4920634920634921,
                           "y": 0.5766016713091923,
                           "uniqueID": "id-37621",
+                          "ioValues": [
+                            {
+                              "name": "inputShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "radius",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
                           "codeVersion": 1,
                           "code": "      //Inputs:[inputShape, radius]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n      \n      //This makes a new copy of of the shape (to prevent garbage collection issues),\n      //and moves it in the X direction. Note that this will not work if the input is an assembly\n      let chamferedShape = await Fillet(inputShape, radius);\n      \n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [chamferedShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      //We could at this point return shape1 as a complete shape and it will be automatically written to the library for us\n      return shape1"
                         },
@@ -3866,10 +3876,6 @@
                             {
                               "name": "radius",
                               "ioValue": 2
-                            },
-                            {
-                              "name": "inputShape",
-                              "ioValue": "__GEOMETRY_INPUT__"
                             }
                           ],
                           "codeVersion": 1,
@@ -5225,7 +5231,7 @@
           "ioValues": [
             {
               "name": "Offset",
-              "ioValue": 46
+              "ioValue": 47
             },
             {
               "name": "Angle X",
@@ -5346,7 +5352,7 @@
                 },
                 {
                   "name": "zDist",
-                  "ioValue": 46
+                  "ioValue": 47
                 }
               ]
             },
@@ -6189,6 +6195,10 @@
                         {
                           "name": "Angle",
                           "ioValue": 120
+                        },
+                        {
+                          "name": "Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -7410,6 +7420,10 @@
                                 {
                                   "name": "Angle",
                                   "ioValue": 72
+                                },
+                                {
+                                  "name": "Shape",
+                                  "ioValue": "__GEOMETRY_INPUT__"
                                 }
                               ],
                               "codeVersion": 1,
@@ -7963,7 +7977,7 @@
           "x": 0.5046296296296297,
           "y": 0.4166666666666667,
           "uniqueID": "id-2601",
-          "name": "Motor Part",
+          "name": "",
           "ioValues": [
             {
               "name": "input",
@@ -8028,10 +8042,6 @@
                 },
                 {
                   "name": "Shape 6",
-                  "ioValue": null
-                },
-                {
-                  "name": "Shape 7",
                   "ioValue": null
                 }
               ]
@@ -8351,9 +8361,33 @@
               "partName": "Motor Part"
             },
             {
+              "atomType": "Move",
+              "x": 0.3498677248677248,
+              "y": 0.5416666666666666,
+              "uniqueID": "id-44738",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "xDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "yDist",
+                  "ioValue": 0
+                },
+                {
+                  "name": "zDist",
+                  "ioValue": -5
+                }
+              ]
+            },
+            {
               "atomType": "Molecule",
-              "x": 0.20171957671957674,
-              "y": 0.5138888888888888,
+              "x": 0.20634920634920637,
+              "y": 0.4916666666666667,
               "uniqueID": "id-2875",
               "name": "Motor Assembly ",
               "topLevel": false,
@@ -8439,8 +8473,7 @@
                     },
                     {
                       "name": "zDist",
-                      "ioValue": 10,
-                      "currentEquation": "10"
+                      "ioValue": 10
                     }
                   ]
                 },
@@ -8553,8 +8586,7 @@
                     },
                     {
                       "name": "height",
-                      "ioValue": 14,
-                      "currentEquation": "14"
+                      "ioValue": 14
                     }
                   ]
                 },
@@ -8620,71 +8652,6 @@
                     }
                   ],
                   "unionType": "Fusion"
-                },
-                {
-                  "atomType": "GitHubMolecule",
-                  "x": 0.13558201058201058,
-                  "y": 0.23888888888888887,
-                  "uniqueID": "id-2889",
-                  "name": "Maslow_Motor",
-                  "topLevel": false,
-                  "allAtoms": [
-                    {
-                      "atomType": "Output",
-                      "x": 0.98,
-                      "y": 0.5,
-                      "uniqueID": "id-2887",
-                      "ioValues": [
-                        {
-                          "name": "number or geometry",
-                          "ioValue": "__GEOMETRY_INPUT__"
-                        }
-                      ]
-                    },
-                    {
-                      "atomType": "Import",
-                      "x": 0.22023809523809526,
-                      "y": 0.5072046109510087,
-                      "uniqueID": "id-2888",
-                      "fileName": "DC Motor.step",
-                      "name": "Import",
-                      "type": "STEP",
-                      "repoOwner": "BarbourSmith",
-                      "repoName": "Maslow_Motor",
-                      "SVGwidth": 10
-                    }
-                  ],
-                  "allConnectors": [
-                    {
-                      "ap2Name": "number or geometry",
-                      "ap1ID": "id-2888",
-                      "ap2ID": "id-2887"
-                    }
-                  ],
-                  "parentRepo": {
-                    "lastFoundGit": "2026-02-12T18:23:39.160Z",
-                    "privateRepo": false,
-                    "repoName": "Maslow_Motor",
-                    "dateCreated": "2026-02-11T04:59:26Z",
-                    "readMe": "https://raw.githubusercontent.com/BarbourSmith/Maslow_Motor/master/README.md?sanitize=true",
-                    "yyyy": 2026,
-                    "topMoleculeID": "id-638",
-                    "githubMoleculesUsed": [],
-                    "html_url": "https://github.com/BarbourSmith/Maslow_Motor",
-                    "topics": [],
-                    "parentRepo": null,
-                    "forks": 0,
-                    "dateModified": "739658",
-                    "ranking": 0,
-                    "searchField": "maslow_motor barboursmith 24 volt dc gear motor ",
-                    "owner": "BarbourSmith",
-                    "description": "24 volt DC gear motor",
-                    "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Maslow_Motor/master/project.abundance?sanitize=true",
-                    "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Maslow_Motor/master/project.svg?sanitize=true",
-                    "isLocal": false
-                  },
-                  "unitsKey": "MM",
-                  "fileTypeVersion": 1
                 },
                 {
                   "atomType": "GitHubMolecule",
@@ -8786,10 +8753,6 @@
                         {
                           "name": "Angle",
                           "ioValue": 90
-                        },
-                        {
-                          "name": "Shape",
-                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -9257,6 +9220,341 @@
                   },
                   "unitsKey": "MM",
                   "fileTypeVersion": 1
+                },
+                {
+                  "atomType": "GitHubMolecule",
+                  "x": 0.1574074074074074,
+                  "y": 0.19722222222222222,
+                  "uniqueID": "id-47017",
+                  "name": "Maslow_Motor",
+                  "topLevel": false,
+                  "allAtoms": [
+                    {
+                      "atomType": "Output",
+                      "x": 0.98,
+                      "y": 0.5,
+                      "uniqueID": "id-47006",
+                      "ioValues": [
+                        {
+                          "name": "number or geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Import",
+                      "x": 0.25925925925925924,
+                      "y": 0.3138888888888889,
+                      "uniqueID": "id-47007",
+                      "fileName": "DC Motor.step",
+                      "name": "Import",
+                      "type": "STEP",
+                      "repoOwner": "BarbourSmith",
+                      "repoName": "Maslow_Motor",
+                      "SVGwidth": 10
+                    },
+                    {
+                      "atomType": "Circle",
+                      "x": 0.2043650793650794,
+                      "y": 0.6305555555555556,
+                      "uniqueID": "id-47008",
+                      "ioValues": [
+                        {
+                          "name": "diameter",
+                          "ioValue": 8
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.3531746031746032,
+                      "y": 0.6444444444444445,
+                      "uniqueID": "id-47009",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": -27.5
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Rectangle",
+                      "x": 0.23809523809523808,
+                      "y": 0.9111111111111111,
+                      "uniqueID": "id-47010",
+                      "ioValues": [
+                        {
+                          "name": "x length",
+                          "ioValue": 10
+                        },
+                        {
+                          "name": "y length",
+                          "ioValue": 10
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.3941798941798942,
+                      "y": 0.85,
+                      "uniqueID": "id-47011",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": -8,
+                          "currentEquation": "-5-3"
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 0
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 0
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Extrude",
+                      "x": 0.49404761904761907,
+                      "y": 0.8027777777777778,
+                      "uniqueID": "id-47012",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "height",
+                          "ioValue": -100
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Move",
+                      "x": 0.594047619047619,
+                      "y": 0.8027777777777778,
+                      "uniqueID": "id-47013",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "xDist",
+                          "ioValue": 0
+                        },
+                        {
+                          "name": "yDist",
+                          "ioValue": 0
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": -4
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Difference",
+                      "x": 0.6329365079365079,
+                      "y": 0.4916666666666667,
+                      "uniqueID": "id-47014",
+                      "ioValues": [
+                        {
+                          "name": "geometry1",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "geometry2",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ]
+                    },
+                    {
+                      "atomType": "Fusion",
+                      "x": 0.7466931216931217,
+                      "y": 0.3111111111111111,
+                      "uniqueID": "id-47015",
+                      "ioValues": [
+                        {
+                          "name": "Shape 2",
+                          "ioValue": {
+                            "geometry": "import-step-53603220858cd60fc2e5dc836e39fbc2f2f80b80c80381af386918d36f034585",
+                            "tags": [],
+                            "color": "#aad7f2",
+                            "bom": [],
+                            "dimension": "3D",
+                            "plane": {
+                              "origin": [
+                                0,
+                                0,
+                                0
+                              ],
+                              "xDir": [
+                                1,
+                                0,
+                                0
+                              ],
+                              "normal": [
+                                0,
+                                0,
+                                1
+                              ]
+                            }
+                          }
+                        },
+                        {
+                          "name": "Shape 3",
+                          "ioValue": {
+                            "geometry": "cut-extrude-circle-4-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--27.5-move-extrude-move-rectangle-10-10--8-0-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--100-0-0--4",
+                            "dimension": "3D",
+                            "tags": [],
+                            "plane": {
+                              "origin": [
+                                0,
+                                0,
+                                0
+                              ],
+                              "xDir": [
+                                1,
+                                0,
+                                0
+                              ],
+                              "normal": [
+                                0,
+                                0,
+                                1
+                              ]
+                            },
+                            "color": "#aad7f2",
+                            "bom": []
+                          }
+                        }
+                      ],
+                      "unionType": "Fusion"
+                    },
+                    {
+                      "atomType": "Add-BOM-Tag",
+                      "x": 0.8333333333333334,
+                      "y": 0.45555555555555555,
+                      "uniqueID": "id-47016",
+                      "name": "Add BOM Tag",
+                      "ioValues": [
+                        {
+                          "name": "geometry",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "Item Name",
+                          "ioValue": "Maslow Motor",
+                          "currentEquation": "Maslow Motor"
+                        },
+                        {
+                          "name": "Number Needed",
+                          "ioValue": 1
+                        },
+                        {
+                          "name": "Cost (USD)",
+                          "ioValue": 35.9
+                        },
+                        {
+                          "name": "Source Link",
+                          "ioValue": "https://shop.maslowcnc.com/products/dc-motor",
+                          "currentEquation": "https://shop.maslowcnc.com/products/dc-motor"
+                        }
+                      ],
+                      "BOMitem": {
+                        "BOMitemName": "Maslow Motor",
+                        "numberNeeded": 1,
+                        "costUSD": 35.9,
+                        "source": "https://shop.maslowcnc.com/products/dc-motor"
+                      }
+                    }
+                  ],
+                  "allConnectors": [
+                    {
+                      "ap2Name": "Shape 2",
+                      "ap1ID": "id-47007",
+                      "ap2ID": "id-47015"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-47008",
+                      "ap2ID": "id-47009"
+                    },
+                    {
+                      "ap2Name": "geometry1",
+                      "ap1ID": "id-47009",
+                      "ap2ID": "id-47014"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-47010",
+                      "ap2ID": "id-47011"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-47011",
+                      "ap2ID": "id-47012"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-47012",
+                      "ap2ID": "id-47013"
+                    },
+                    {
+                      "ap2Name": "geometry2",
+                      "ap1ID": "id-47013",
+                      "ap2ID": "id-47014"
+                    },
+                    {
+                      "ap2Name": "Shape 3",
+                      "ap1ID": "id-47014",
+                      "ap2ID": "id-47015"
+                    },
+                    {
+                      "ap2Name": "geometry",
+                      "ap1ID": "id-47015",
+                      "ap2ID": "id-47016"
+                    },
+                    {
+                      "ap2Name": "number or geometry",
+                      "ap1ID": "id-47016",
+                      "ap2ID": "id-47006"
+                    }
+                  ],
+                  "parentRepo": {
+                    "lastFoundGit": "2026-02-12T18:23:39.160Z",
+                    "privateRepo": false,
+                    "repoName": "Maslow_Motor",
+                    "dateCreated": "2026-02-11T04:59:26Z",
+                    "readMe": "https://raw.githubusercontent.com/BarbourSmith/Maslow_Motor/master/README.md?sanitize=true",
+                    "yyyy": 2026,
+                    "topMoleculeID": "id-638",
+                    "githubMoleculesUsed": [],
+                    "html_url": "https://github.com/BarbourSmith/Maslow_Motor",
+                    "topics": [],
+                    "parentRepo": null,
+                    "forks": 0,
+                    "dateModified": "739658",
+                    "ranking": 0,
+                    "searchField": "maslow_motor barboursmith 24 volt dc gear motor ",
+                    "owner": "BarbourSmith",
+                    "description": "24 volt DC gear motor",
+                    "contentURL": "https://raw.githubusercontent.com/BarbourSmith/Maslow_Motor/master/project.abundance?sanitize=true",
+                    "svgURL": "https://raw.githubusercontent.com/BarbourSmith/Maslow_Motor/master/project.svg?sanitize=true",
+                    "isLocal": false
+                  },
+                  "unitsKey": "MM",
+                  "fileTypeVersion": 1
                 }
               ],
               "allConnectors": [
@@ -9317,11 +9615,6 @@
                 },
                 {
                   "ap2Name": "geometry",
-                  "ap1ID": "id-2889",
-                  "ap2ID": "id-2895"
-                },
-                {
-                  "ap2Name": "geometry",
                   "ap1ID": "id-2981",
                   "ap2ID": "id-3040"
                 },
@@ -9329,14 +9622,19 @@
                   "ap2Name": "geometry",
                   "ap1ID": "id-24488",
                   "ap2ID": "id-2962"
+                },
+                {
+                  "ap2Name": "geometry",
+                  "ap1ID": "id-47017",
+                  "ap2ID": "id-2895"
                 }
               ],
               "fileTypeVersion": 1
             },
             {
               "atomType": "Molecule",
-              "x": 0.10648148148148147,
-              "y": 0.6472222222222223,
+              "x": 0.1111111111111111,
+              "y": 0.6555555555555556,
               "uniqueID": "id-3118",
               "name": "Gear",
               "topLevel": false,
@@ -9395,8 +9693,8 @@
                 },
                 {
                   "atomType": "Assembly",
-                  "x": 0.8267195767195767,
-                  "y": 0.425,
+                  "x": 0.8293650793650793,
+                  "y": 0.4305555555555555,
                   "uniqueID": "id-3173",
                   "ioValues": [
                     {
@@ -9516,8 +9814,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.7546296296296297,
-                  "y": 0.625,
+                  "x": 0.7559523809523809,
+                  "y": 0.5916666666666667,
                   "uniqueID": "id-3230",
                   "ioValues": [
                     {
@@ -9843,7 +10141,7 @@
                   "ioValues": [
                     {
                       "name": "diameter",
-                      "ioValue": 3
+                      "ioValue": 5
                     }
                   ]
                 },
@@ -9902,8 +10200,8 @@
                 },
                 {
                   "atomType": "Move",
-                  "x": 0.9332010582010583,
-                  "y": 0.7972222222222223,
+                  "x": 0.9351851851851851,
+                  "y": 0.7833333333333333,
                   "uniqueID": "id-24582",
                   "ioValues": [
                     {
@@ -10262,6 +10560,10 @@
                         {
                           "name": "yDist",
                           "ioValue": 0
+                        },
+                        {
+                          "name": "zDist",
+                          "ioValue": 0
                         }
                       ]
                     },
@@ -10274,6 +10576,18 @@
                         {
                           "name": "geometry",
                           "ioValue": "__GEOMETRY_INPUT__"
+                        },
+                        {
+                          "name": "x-axis degrees",
+                          "ioValue": 90
+                        },
+                        {
+                          "name": "y-axis degrees",
+                          "ioValue": 0
+                        },
+                        {
+                          "name": "z-axis degrees",
+                          "ioValue": 0
                         }
                       ]
                     },
@@ -17459,6 +17773,10 @@
                                 {
                                   "name": "Angle",
                                   "ioValue": 90
+                                },
+                                {
+                                  "name": "Shape",
+                                  "ioValue": "__GEOMETRY_INPUT__"
                                 }
                               ],
                               "codeVersion": 1,
@@ -17735,31 +18053,6 @@
                 }
               ],
               "fileTypeVersion": 1
-            },
-            {
-              "atomType": "Move",
-              "x": 0.3498677248677248,
-              "y": 0.5416666666666666,
-              "uniqueID": "id-44738",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "xDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "yDist",
-                  "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": -5,
-                  "currentEquation": "-5"
-                }
-              ]
             }
           ],
           "allConnectors": [
@@ -17834,11 +18127,6 @@
               "ap2ID": "id-5891"
             },
             {
-              "ap2Name": "Shape 7",
-              "ap1ID": "id-5891",
-              "ap2ID": "id-3023"
-            },
-            {
               "ap2Name": "geometry",
               "ap1ID": "id-7240",
               "ap2ID": "id-22695"
@@ -17847,6 +18135,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-26415",
               "ap2ID": "id-26419"
+            },
+            {
+              "ap2Name": "Shape 2",
+              "ap1ID": "id-44738",
+              "ap2ID": "id-3243"
             },
             {
               "ap2Name": "geometry",
@@ -17877,11 +18170,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-4530",
               "ap2ID": "id-5575"
-            },
-            {
-              "ap2Name": "Shape 2",
-              "ap1ID": "id-44738",
-              "ap2ID": "id-3243"
             }
           ],
           "fileTypeVersion": 1
