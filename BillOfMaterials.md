@@ -2,9 +2,4 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|New Item|6|$0.00||
-|20mm M3 Bolt|5|$0.00||
-|10mm M3 Bolt|11|$0.00||
-|1.25in screw|10|$0.00||
-|42mm Bearing|1|$3.25|[Amazon](https://www.amazon.com/dp/B082PYMKLG?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1?tag=maslowcnc01-20)|
-|Total: |33|$3.25| |
+|Total: |0|$0.00| |
