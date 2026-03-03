@@ -309,7 +309,7 @@
     {
       "atomType": "Molecule",
       "x": 0.07076719576719577,
-      "y": 0.2824207492795389,
+      "y": 0.3,
       "uniqueID": "id-566",
       "name": "Body",
       "topLevel": false,
@@ -550,7 +550,7 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "move-rotate-shrinkWrap-fuse-move-circle-50-61-0-0-move-rectangle-10-100-6-0-0-50-0-0-0--100-0-0",
+                "geometry": "move-rotate-shrinkWrap-fuse-move-circle-50-61-0-0-move-rectangle-10-100-6-0-0-50-0-0-0--102-0-0",
                 "dimension": "2D",
                 "tags": [],
                 "color": "#aad7f2",
@@ -614,8 +614,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.42791005291005285,
-          "y": 0.8645533141210374,
+          "x": 0.43253968253968256,
+          "y": 0.861111111111111,
           "uniqueID": "id-629",
           "ioValues": [
             {
@@ -624,7 +624,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": -100
+              "ioValue": -102
             },
             {
               "name": "yDist",
@@ -632,7 +632,8 @@
             },
             {
               "name": "zDist",
-              "ioValue": 0
+              "ioValue": 0,
+              "currentEquation": "0"
             }
           ]
         },
@@ -4998,7 +4999,7 @@
     {
       "atomType": "Molecule",
       "x": 0.5370370370370371,
-      "y": 0.7416666666666667,
+      "y": 0.7333333333333334,
       "uniqueID": "id-2570",
       "name": "Motor Version",
       "ioValues": [
@@ -5114,8 +5115,8 @@
         },
         {
           "atomType": "ExtractTag",
-          "x": 0.7466931216931217,
-          "y": 0.22777777777777777,
+          "x": 0.7513227513227513,
+          "y": 0.21944444444444444,
           "uniqueID": "id-3088",
           "name": "Extract Tag",
           "ioValues": [
@@ -18803,8 +18804,8 @@
         },
         {
           "atomType": "Export",
-          "x": 0.8584656084656084,
-          "y": 0.3416666666666667,
+          "x": 0.8604497354497355,
+          "y": 0.3527777777777778,
           "uniqueID": "id-47914",
           "ioValues": [
             {
