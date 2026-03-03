@@ -5224,8 +5224,8 @@
         },
         {
           "atomType": "GitHubMolecule",
-          "x": 0.8392857142857143,
-          "y": 0.33055555555555555,
+          "x": 0.8677248677248678,
+          "y": 0.8111111111111111,
           "uniqueID": "id-4439",
           "name": "Cross-Section",
           "ioValues": [
@@ -18800,6 +18800,36 @@
             }
           ],
           "fileTypeVersion": 1
+        },
+        {
+          "atomType": "Export",
+          "x": 0.8584656084656084,
+          "y": 0.3416666666666667,
+          "uniqueID": "id-47914",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STL",
+              "currentEquation": "STL"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "Motor Version",
+              "currentEquation": "Motor Version"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "Motor Version"
         }
       ],
       "allConnectors": [
@@ -18837,6 +18867,11 @@
           "ap2Name": "geometry1",
           "ap1ID": "id-2598",
           "ap2ID": "id-2583"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-3088",
+          "ap2ID": "id-47914"
         },
         {
           "ap2Name": "geometry2",
