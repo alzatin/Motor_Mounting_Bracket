@@ -5,8 +5,7 @@
 |New Item|6|$0.00||
 |20mm M3 Bolt|5|$0.00||
 |12mm M3 Bolt|4|$0.00||
-|10mm M3 Bolt|4|$0.00||
 |1.25in screw|10|$0.00||
 |Maslow Motor|1|$35.90|https://shop.maslowcnc.com/products/dc-motor|
 |42mm Bearing|1|$3.25|[Amazon](https://www.amazon.com/dp/B082PYMKLG?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1?tag=maslowcnc01-20)|
-|Total: |31|$39.15| |
+|Total: |27|$39.15| |
