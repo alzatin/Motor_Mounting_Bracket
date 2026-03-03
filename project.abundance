@@ -40,8 +40,8 @@
     },
     {
       "atomType": "Move",
-      "x": 0.12301587301587302,
-      "y": 0.6583333333333333,
+      "x": 0.125,
+      "y": 0.6527777777777778,
       "uniqueID": "id-234",
       "ioValues": [
         {
@@ -50,7 +50,8 @@
         },
         {
           "name": "xDist",
-          "ioValue": 50
+          "ioValue": 60,
+          "currentEquation": "60"
         },
         {
           "name": "yDist",
@@ -119,8 +120,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.048941798941798946,
-      "y": 0.6277777777777778,
+      "x": 0.047619047619047616,
+      "y": 0.6333333333333333,
       "uniqueID": "id-201",
       "name": "Keep Out",
       "topLevel": false,
@@ -167,8 +168,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.4444444444444444,
-          "y": 0.31412103746397696,
+          "x": 0.4431216931216931,
+          "y": 0.32222222222222224,
           "uniqueID": "id-212",
           "ioValues": [
             {
@@ -351,8 +352,8 @@
         },
         {
           "atomType": "Move",
-          "x": 0.2374338624338624,
-          "y": 0.25360230547550433,
+          "x": 0.24338624338624337,
+          "y": 0.25,
           "uniqueID": "id-573",
           "ioValues": [
             {
@@ -361,7 +362,7 @@
             },
             {
               "name": "xDist",
-              "ioValue": 50
+              "ioValue": 61
             },
             {
               "name": "yDist",
@@ -395,7 +396,7 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "move-circle-50-50-0-0",
+                "geometry": "move-circle-50-61-0-0",
                 "dimension": "2D",
                 "tags": [],
                 "plane": {
@@ -521,7 +522,7 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "move-rotate-shrinkWrap-fuse-move-circle-50-50-0-0-move-rectangle-10-100-6-0-0-50-0-0-0--100-0-0",
+                "geometry": "move-rotate-shrinkWrap-fuse-move-circle-50-61-0-0-move-rectangle-10-100-6-0-0-50-0-0-0--100-0-0",
                 "dimension": "2D",
                 "tags": [],
                 "color": "#aad7f2",
@@ -550,7 +551,7 @@
             {
               "name": "Shape 2",
               "ioValue": {
-                "geometry": "move-shrinkWrap-fuse-move-circle-50-50-0-0-move-rectangle-10-100-6-0-0-50-0-0-0",
+                "geometry": "move-shrinkWrap-fuse-move-circle-50-61-0-0-move-rectangle-10-100-6-0-0-50-0-0-0",
                 "dimension": "2D",
                 "tags": [],
                 "color": "#aad7f2",
@@ -1277,7 +1278,8 @@
                 },
                 {
                   "name": "height",
-                  "ioValue": 65
+                  "ioValue": 75,
+                  "currentEquation": "75"
                 }
               ]
             },
