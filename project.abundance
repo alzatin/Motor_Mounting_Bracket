@@ -11449,8 +11449,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.44907407407407407,
-              "y": 0.3333333333333333,
+              "x": 0.453042328042328,
+              "y": 0.34444444444444444,
               "uniqueID": "id-8801",
               "name": "Upright",
               "ioValues": [
@@ -11845,8 +11845,8 @@
                     },
                     {
                       "atomType": "Molecule",
-                      "x": 0.14193121693121694,
-                      "y": 0.4666666666666666,
+                      "x": 0.14153439153439154,
+                      "y": 0.4722222222222222,
                       "uniqueID": "id-47182",
                       "name": "",
                       "topLevel": false,
@@ -11889,8 +11889,8 @@
                         },
                         {
                           "atomType": "GitHubMolecule",
-                          "x": 0.14219576719576718,
-                          "y": 0.3333333333333333,
+                          "x": 0.1402116402116402,
+                          "y": 0.35555555555555557,
                           "uniqueID": "id-47184",
                           "name": "Isosceles-Triangle---Angle",
                           "ioValues": [
@@ -11904,7 +11904,7 @@
                             },
                             {
                               "name": "Thickness",
-                              "ioValue": 70
+                              "ioValue": 30
                             }
                           ],
                           "topLevel": false,
@@ -11933,7 +11933,7 @@
                                 },
                                 {
                                   "name": "thickness",
-                                  "ioValue": 70
+                                  "ioValue": 30
                                 },
                                 {
                                   "name": "angle",
@@ -12325,7 +12325,7 @@
                         {
                           "name": "Shape 2",
                           "ioValue": {
-                            "geometry": "move-rotate-cut-move-4a078758-15-70-45-0-0--7-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0-0-0-90-5-12-0",
+                            "geometry": "move-rotate-cut-move-4a078758-15-35-45-0-0--7-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0-0-0-90-5-12-0",
                             "tags": [
                               "aTag"
                             ],
@@ -12354,7 +12354,7 @@
                         {
                           "name": "Shape 4",
                           "ioValue": {
-                            "geometry": "move-rotate-cut-move-4a078758-15-70-45-0-0--7-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0-0-0-90-5--12-0",
+                            "geometry": "move-rotate-cut-move-4a078758-15-35-45-0-0--7-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0-0-0-90-5--12-0",
                             "tags": [
                               "aTag"
                             ],
@@ -16642,8 +16642,8 @@
             },
             {
               "atomType": "Molecule",
-              "x": 0.18849206349206352,
-              "y": 0.3055555555555555,
+              "x": 0.1931216931216931,
+              "y": 0.3194444444444444,
               "uniqueID": "id-4530",
               "name": "Arm",
               "topLevel": false,
