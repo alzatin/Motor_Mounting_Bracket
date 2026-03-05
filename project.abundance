@@ -8311,51 +8311,6 @@
               ]
             },
             {
-              "atomType": "ExtractTag",
-              "x": 0.8756613756613756,
-              "y": 0.4111111111111111,
-              "uniqueID": "id-7240",
-              "name": "Extract Tag",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "tag": "Plastic",
-              "tagIndex": 0
-            },
-            {
-              "atomType": "Export",
-              "x": 0.9345238095238095,
-              "y": 0.7277777777777777,
-              "uniqueID": "id-22695",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "File Type",
-                  "ioValue": "STL",
-                  "currentEquation": "STL"
-                },
-                {
-                  "name": "Resolution (dpi)",
-                  "ioValue": 96
-                },
-                {
-                  "name": "Part Name",
-                  "ioValue": "Drive Gear",
-                  "currentEquation": "Drive Gear"
-                }
-              ],
-              "type": null,
-              "resolution": 96,
-              "importIndex": 0,
-              "partName": "Drive Gear"
-            },
-            {
               "atomType": "Move",
               "x": 0.23346560846560846,
               "y": 0.5555555555555556,
@@ -19892,11 +19847,6 @@
             },
             {
               "ap2Name": "geometry",
-              "ap1ID": "id-3023",
-              "ap2ID": "id-7240"
-            },
-            {
-              "ap2Name": "geometry",
               "ap1ID": "id-3061",
               "ap2ID": "id-3064"
             },
@@ -19934,11 +19884,6 @@
               "ap2Name": "geometry",
               "ap1ID": "id-5885",
               "ap2ID": "id-5891"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-7240",
-              "ap2ID": "id-22695"
             },
             {
               "ap2Name": "Shape 2",
