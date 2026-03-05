@@ -15878,8 +15878,8 @@
                     },
                     {
                       "atomType": "Molecule",
-                      "x": 0.4722222222222222,
-                      "y": 0.26111111111111107,
+                      "x": 0.6197089947089947,
+                      "y": 0.21111111111111114,
                       "uniqueID": "id-47377",
                       "name": "Vertical",
                       "topLevel": false,
@@ -16807,7 +16807,7 @@
                         {
                           "atomType": "GitHubMolecule",
                           "x": 0.14351851851851852,
-                          "y": 0.35555555555555557,
+                          "y": 0.3527777777777778,
                           "uniqueID": "id-50328",
                           "name": "Isosceles-Triangle---Angle",
                           "ioValues": [
@@ -16937,8 +16937,8 @@
                         },
                         {
                           "atomType": "GitHubMolecule",
-                          "x": 0.3558201058201058,
-                          "y": 0.725,
+                          "x": 0.3492063492063492,
+                          "y": 0.7805555555555554,
                           "uniqueID": "id-50334",
                           "name": "Cross-Section",
                           "ioValues": [
@@ -17285,8 +17285,8 @@
                     },
                     {
                       "atomType": "Fusion",
-                      "x": 0.6977513227513228,
-                      "y": 0.6027777777777779,
+                      "x": 0.7407407407407407,
+                      "y": 0.6,
                       "uniqueID": "id-50422",
                       "ioValues": [
                         {
@@ -17398,6 +17398,170 @@
                           "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ]
+                    },
+                    {
+                      "atomType": "Molecule",
+                      "x": 0.5158730158730159,
+                      "y": 0.3333333333333333,
+                      "uniqueID": "id-50497",
+                      "name": "Make Keepout",
+                      "ioValues": [
+                        {
+                          "name": "input",
+                          "ioValue": "__GEOMETRY_INPUT__"
+                        }
+                      ],
+                      "topLevel": false,
+                      "allAtoms": [
+                        {
+                          "atomType": "Output",
+                          "x": 0.98,
+                          "y": 0.5,
+                          "uniqueID": "id-50499",
+                          "ioValues": [
+                            {
+                              "name": "number or geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Input",
+                          "x": 0.025384615384615384,
+                          "y": 0.15384615384615385,
+                          "uniqueID": "id-50501",
+                          "name": "input",
+                          "type": "geometry"
+                        },
+                        {
+                          "atomType": "Move",
+                          "x": 0.33201058201058203,
+                          "y": 0.6277777777777778,
+                          "uniqueID": "id-50504",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "xDist",
+                              "ioValue": 0
+                            },
+                            {
+                              "name": "yDist",
+                              "ioValue": 45
+                            },
+                            {
+                              "name": "zDist",
+                              "ioValue": 0
+                            }
+                          ]
+                        },
+                        {
+                          "atomType": "Fusion",
+                          "x": 0.5079365079365079,
+                          "y": 0.4222222222222223,
+                          "uniqueID": "id-50510",
+                          "ioValues": [
+                            {
+                              "name": "Shape 1",
+                              "ioValue": {
+                                "geometry": "fuse-fuse-extrude-rectangle-25-45-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--5-move-rotate-cut-move-4a078758-10-45-45-0-0--4-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0--90-0-0-6--22.5-0-move-rotate-cut-move-4a078758-10-45-45-0-0--4-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0--90-0-0--6--22.5-0",
+                                "tags": [],
+                                "bom": [],
+                                "plane": {
+                                  "origin": [
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "xDir": [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  "normal": [
+                                    0,
+                                    0,
+                                    1
+                                  ]
+                                },
+                                "color": "#aad7f2",
+                                "dimension": "3D"
+                              }
+                            },
+                            {
+                              "name": "Shape 2",
+                              "ioValue": {
+                                "geometry": "move-fuse-fuse-extrude-rectangle-25-45-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}--5-move-rotate-cut-move-4a078758-10-45-45-0-0--4-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0--90-0-0-6--22.5-0-move-rotate-cut-move-4a078758-10-45-45-0-0--4-0-rotate-move-extrude-rectangle-40000-40000-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-4000-0-0-0--90-0-0--90-0-0--6--22.5-0-0-45-0",
+                                "tags": [],
+                                "bom": [],
+                                "plane": {
+                                  "origin": [
+                                    0,
+                                    0,
+                                    0
+                                  ],
+                                  "xDir": [
+                                    1,
+                                    0,
+                                    0
+                                  ],
+                                  "normal": [
+                                    0,
+                                    0,
+                                    1
+                                  ]
+                                },
+                                "color": "#aad7f2",
+                                "dimension": "3D"
+                              }
+                            }
+                          ],
+                          "unionType": "Fusion"
+                        },
+                        {
+                          "atomType": "Color",
+                          "x": 0.7797619047619048,
+                          "y": 0.5750000000000001,
+                          "uniqueID": "id-50515",
+                          "ioValues": [
+                            {
+                              "name": "geometry",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
+                          "selectedColor": "Keep Out"
+                        }
+                      ],
+                      "allConnectors": [
+                        {
+                          "ap2Name": "Shape 1",
+                          "ap1ID": "id-50501",
+                          "ap2ID": "id-50510"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-50501",
+                          "ap2ID": "id-50504"
+                        },
+                        {
+                          "ap2Name": "Shape 2",
+                          "ap1ID": "id-50504",
+                          "ap2ID": "id-50510"
+                        },
+                        {
+                          "ap2Name": "geometry",
+                          "ap1ID": "id-50510",
+                          "ap2ID": "id-50515"
+                        },
+                        {
+                          "ap2Name": "number or geometry",
+                          "ap1ID": "id-50515",
+                          "ap2ID": "id-50499"
+                        }
+                      ],
+                      "fileTypeVersion": 1
                     }
                   ],
                   "allConnectors": [
@@ -17425,6 +17589,11 @@
                       "ap2Name": "geometry",
                       "ap1ID": "id-50315",
                       "ap2ID": "id-50319"
+                    },
+                    {
+                      "ap2Name": "input",
+                      "ap1ID": "id-50315",
+                      "ap2ID": "id-50497"
                     },
                     {
                       "ap2Name": "geometry1",
