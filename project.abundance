@@ -15416,7 +15416,7 @@
                     },
                     {
                       "name": "zDist",
-                      "ioValue": 33
+                      "ioValue": 31
                     }
                   ]
                 },
@@ -15734,8 +15734,8 @@
                 },
                 {
                   "atomType": "Molecule",
-                  "x": 0.328042328042328,
-                  "y": 0.85,
+                  "x": 0.3247354497354497,
+                  "y": 0.8666666666666667,
                   "uniqueID": "id-47365",
                   "name": "Upright",
                   "ioValues": [
@@ -15763,7 +15763,7 @@
                       "x": 0.7936507936507936,
                       "y": 0.39166666666666666,
                       "uniqueID": "id-47372",
-                      "name": "Arm Plastic",
+                      "name": "Upright Plastic",
                       "ioValues": [
                         {
                           "name": "geometry",
@@ -15771,7 +15771,7 @@
                         }
                       ],
                       "tags": [
-                        "Arm Plastic"
+                        "Upright Plastic"
                       ]
                     },
                     {
@@ -17724,8 +17724,8 @@
                 },
                 {
                   "atomType": "Molecule",
-                  "x": 0.0958994708994709,
-                  "y": 0.2472222222222222,
+                  "x": 0.09656084656084656,
+                  "y": 0.25,
                   "uniqueID": "id-47407",
                   "name": "Arm",
                   "topLevel": false,
@@ -17814,7 +17814,7 @@
                         },
                         {
                           "name": "height",
-                          "ioValue": 16
+                          "ioValue": 20
                         }
                       ]
                     },
@@ -17884,14 +17884,14 @@
                     },
                     {
                       "atomType": "Fusion",
-                      "x": 0.48148148148148145,
-                      "y": 0.6722222222222223,
+                      "x": 0.4788359788359788,
+                      "y": 0.6611111111111111,
                       "uniqueID": "id-47416",
                       "ioValues": [
                         {
                           "name": "Shape 1",
                           "ioValue": {
-                            "geometry": "move-extrude-rectangle-16-26-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-16-1-7-2",
+                            "geometry": "move-extrude-rectangle-16-26-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-20-1-7-2",
                             "dimension": "3D",
                             "plane": {
                               "origin": [
@@ -17918,7 +17918,7 @@
                         {
                           "name": "Shape 2",
                           "ioValue": {
-                            "geometry": "extrude-move-rectangle-100-8--50-8-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-11",
+                            "geometry": "extrude-move-rectangle-100-8--50-8-0-{\"origin\":[0,0,0],\"xDir\":[1,0,0],\"normal\":[0,0,1]}-16",
                             "dimension": "3D",
                             "plane": {
                               "origin": [
@@ -17957,7 +17957,7 @@
                         },
                         {
                           "name": "height",
-                          "ioValue": 11
+                          "ioValue": 16
                         }
                       ]
                     },
@@ -18153,7 +18153,7 @@
                             },
                             {
                               "name": "height",
-                              "ioValue": 20
+                              "ioValue": 25
                             }
                           ]
                         },
@@ -19506,10 +19506,10 @@
                     },
                     {
                       "atomType": "Tag",
-                      "x": 0.8564814814814814,
-                      "y": 0.38888888888888884,
+                      "x": 0.8604497354497355,
+                      "y": 0.3861111111111111,
                       "uniqueID": "id-53008",
-                      "name": "Arm",
+                      "name": "Encoder Arm",
                       "ioValues": [
                         {
                           "name": "geometry",
@@ -19517,7 +19517,7 @@
                         }
                       ],
                       "tags": [
-                        "Arm"
+                        "Encoder Arm"
                       ]
                     }
                   ],
@@ -19612,7 +19612,7 @@
                       "ioValue": "__GEOMETRY_INPUT__"
                     }
                   ],
-                  "tag": "Arm",
+                  "tag": "Arm Plastic",
                   "tagIndex": 0
                 }
               ],
