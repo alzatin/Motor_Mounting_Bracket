@@ -3,7 +3,7 @@
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
 |New Item|6|$0.00||
-|20mm M3 Bolt|5|$0.00||
+|25mm M3 Bolt|5|$0.00||
 |12mm M3 Bolt|4|$0.00||
 |1.25in screw|10|$0.00||
 |Maslow Motor|1|$35.90|https://shop.maslowcnc.com/products/dc-motor|
