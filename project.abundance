@@ -13811,6 +13811,51 @@
                 }
               ],
               "fileTypeVersion": 1
+            },
+            {
+              "atomType": "ExtractTag",
+              "x": 0.7652116402116402,
+              "y": 0.8217270194986073,
+              "uniqueID": "id-72822",
+              "name": "Extract Tag",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tag": "Gear Plastic",
+              "tagIndex": 0
+            },
+            {
+              "atomType": "Export",
+              "x": 0.876984126984127,
+              "y": 0.8356545961002785,
+              "uniqueID": "id-72828",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "File Type",
+                  "ioValue": "STL",
+                  "currentEquation": "STL"
+                },
+                {
+                  "name": "Resolution (dpi)",
+                  "ioValue": 96
+                },
+                {
+                  "name": "Part Name",
+                  "ioValue": "Motor Part",
+                  "currentEquation": "Motor Part"
+                }
+              ],
+              "type": null,
+              "resolution": 96,
+              "importIndex": 0,
+              "partName": "Motor Part"
             }
           ],
           "allConnectors": [
@@ -13823,6 +13868,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-3074",
               "ap2ID": "id-3017"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-3074",
+              "ap2ID": "id-72822"
             },
             {
               "ap2Name": "Shape 1",
@@ -13853,6 +13903,11 @@
               "ap2Name": "geometry",
               "ap1ID": "id-60593",
               "ap2ID": "id-44738"
+            },
+            {
+              "ap2Name": "geometry",
+              "ap1ID": "id-72822",
+              "ap2ID": "id-72828"
             }
           ],
           "fileTypeVersion": 1
