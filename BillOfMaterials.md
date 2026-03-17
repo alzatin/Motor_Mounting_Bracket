@@ -4,8 +4,8 @@
  |----|----------|-----|-----|
 |New Item|5|$0.00||
 |32mm M3 Bolt|5|$0.00||
-|M2.5x6mm Bolt|11|$0.00||
+|M2.5x6mm Bolt|17|$0.00||
 |1.25in screw|10|$0.00||
 |42mm Bearing|1|$3.25|[Amazon](https://www.amazon.com/dp/B082PYMKLG?ref=ppx_yo2ov_dt_b_fed_asin_title&th=1?tag=maslowcnc01-20)|
 |24 Volt Servo|1|$44.85|[Amazon](https://www.amazon.com/dp/B0DFWQD5JL?tag=maslowcnc01-20)|
-|Total: |33|$48.10| |
+|Total: |39|$48.10| |
