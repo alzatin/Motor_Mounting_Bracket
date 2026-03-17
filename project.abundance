@@ -1170,6 +1170,10 @@
                 {
                   "name": "distZ",
                   "ioValue": 0
+                },
+                {
+                  "name": "Shape",
+                  "ioValue": "__GEOMETRY_INPUT__"
                 }
               ],
               "codeVersion": 1,
@@ -3849,6 +3853,16 @@
                           "x": 0.4920634920634921,
                           "y": 0.5766016713091923,
                           "uniqueID": "id-37621",
+                          "ioValues": [
+                            {
+                              "name": "inputShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            },
+                            {
+                              "name": "radius",
+                              "ioValue": "__GEOMETRY_INPUT__"
+                            }
+                          ],
                           "codeVersion": 1,
                           "code": "      //Inputs:[inputShape, radius]\n      //This defines the molecules inputs and creates variables with the same names which can be referenced in the code\n      \n      //Takes the address and gets the shape from the library\n      let importedShape = library[inputShape]\n      \n      //This makes a new copy of of the shape (to prevent garbage collection issues),\n      //and moves it in the X direction. Note that this will not work if the input is an assembly\n      let chamferedShape = await Fillet(inputShape, radius);\n      \n      \n      //Shapes stored in the library have tags, a color, a plane, and a bill of materials like this. We don't modify them here\n      let shape1 = {\n        geometry: [chamferedShape],\n        tags: importedShape.tags,\n        color: importedShape.color,\n        plane: importedShape.plane,\n        bom: importedShape.bom\n      }\n      \n      //We could at this point return shape1 as a complete shape and it will be automatically written to the library for us\n      return shape1"
                         },
@@ -3861,6 +3875,10 @@
                             {
                               "name": "radius",
                               "ioValue": 2
+                            },
+                            {
+                              "name": "inputShape",
+                              "ioValue": "__GEOMETRY_INPUT__"
                             }
                           ],
                           "codeVersion": 1,
@@ -5223,6 +5241,22 @@
           "partName": "Motor Version"
         },
         {
+          "atomType": "Assembly",
+          "x": 0.4947089947089947,
+          "y": 0.403899721448468,
+          "uniqueID": "id-72364",
+          "ioValues": [
+            {
+              "name": "Shape 1",
+              "ioValue": null
+            },
+            {
+              "name": "Shape 2",
+              "ioValue": null
+            }
+          ]
+        },
+        {
           "atomType": "GitHubMolecule",
           "x": 0.8683862433862434,
           "y": 0.8444444444444446,
@@ -5349,10 +5383,6 @@
                 {
                   "name": "yDist",
                   "ioValue": 0
-                },
-                {
-                  "name": "zDist",
-                  "ioValue": 47
                 }
               ]
             },
@@ -5365,18 +5395,6 @@
                 {
                   "name": "geometry",
                   "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "x-axis degrees",
-                  "ioValue": 0
-                },
-                {
-                  "name": "y-axis degrees",
-                  "ioValue": 90
-                },
-                {
-                  "name": "z-axis degrees",
-                  "ioValue": 0
                 }
               ]
             },
@@ -8407,6 +8425,51 @@
               ]
             },
             {
+              "atomType": "ExtractTag",
+              "x": 0.7652116402116402,
+              "y": 0.8217270194986073,
+              "uniqueID": "id-72822",
+              "name": "Extract Tag",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                }
+              ],
+              "tag": "Gear Plastic",
+              "tagIndex": 0
+            },
+            {
+              "atomType": "Export",
+              "x": 0.876984126984127,
+              "y": 0.8356545961002785,
+              "uniqueID": "id-72828",
+              "ioValues": [
+                {
+                  "name": "geometry",
+                  "ioValue": "__GEOMETRY_INPUT__"
+                },
+                {
+                  "name": "File Type",
+                  "ioValue": "STL",
+                  "currentEquation": "STL"
+                },
+                {
+                  "name": "Resolution (dpi)",
+                  "ioValue": 96
+                },
+                {
+                  "name": "Part Name",
+                  "ioValue": "Motor Part",
+                  "currentEquation": "Motor Part"
+                }
+              ],
+              "type": null,
+              "resolution": 96,
+              "importIndex": 0,
+              "partName": "Motor Part"
+            },
+            {
               "atomType": "Molecule",
               "x": 0.05092592592592592,
               "y": 0.8194444444444444,
@@ -10040,6 +10103,10 @@
                         {
                           "name": "distZ",
                           "ioValue": 0
+                        },
+                        {
+                          "name": "Shape",
+                          "ioValue": "__GEOMETRY_INPUT__"
                         }
                       ],
                       "codeVersion": 1,
@@ -13811,51 +13878,6 @@
                 }
               ],
               "fileTypeVersion": 1
-            },
-            {
-              "atomType": "ExtractTag",
-              "x": 0.7652116402116402,
-              "y": 0.8217270194986073,
-              "uniqueID": "id-72822",
-              "name": "Extract Tag",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                }
-              ],
-              "tag": "Gear Plastic",
-              "tagIndex": 0
-            },
-            {
-              "atomType": "Export",
-              "x": 0.876984126984127,
-              "y": 0.8356545961002785,
-              "uniqueID": "id-72828",
-              "ioValues": [
-                {
-                  "name": "geometry",
-                  "ioValue": "__GEOMETRY_INPUT__"
-                },
-                {
-                  "name": "File Type",
-                  "ioValue": "STL",
-                  "currentEquation": "STL"
-                },
-                {
-                  "name": "Resolution (dpi)",
-                  "ioValue": 96
-                },
-                {
-                  "name": "Part Name",
-                  "ioValue": "Motor Part",
-                  "currentEquation": "Motor Part"
-                }
-              ],
-              "type": null,
-              "resolution": 96,
-              "importIndex": 0,
-              "partName": "Motor Part"
             }
           ],
           "allConnectors": [
@@ -13891,6 +13913,11 @@
             },
             {
               "ap2Name": "geometry",
+              "ap1ID": "id-72822",
+              "ap2ID": "id-72828"
+            },
+            {
+              "ap2Name": "geometry",
               "ap1ID": "id-3118",
               "ap2ID": "id-3237"
             },
@@ -13903,30 +13930,9 @@
               "ap2Name": "geometry",
               "ap1ID": "id-60593",
               "ap2ID": "id-44738"
-            },
-            {
-              "ap2Name": "geometry",
-              "ap1ID": "id-72822",
-              "ap2ID": "id-72828"
             }
           ],
           "fileTypeVersion": 1
-        },
-        {
-          "atomType": "Assembly",
-          "x": 0.4947089947089947,
-          "y": 0.403899721448468,
-          "uniqueID": "id-72364",
-          "ioValues": [
-            {
-              "name": "Shape 1",
-              "ioValue": null
-            },
-            {
-              "name": "Shape 2",
-              "ioValue": null
-            }
-          ]
         }
       ],
       "allConnectors": [
@@ -14006,6 +14012,11 @@
           "ap2ID": "id-4366"
         },
         {
+          "ap2Name": "geometry1",
+          "ap1ID": "id-72364",
+          "ap2ID": "id-3095"
+        },
+        {
           "ap2Name": "geometry",
           "ap1ID": "id-4341",
           "ap2ID": "id-4377"
@@ -14014,11 +14025,6 @@
           "ap2Name": "Shape 2",
           "ap1ID": "id-2601",
           "ap2ID": "id-72364"
-        },
-        {
-          "ap2Name": "geometry1",
-          "ap1ID": "id-72364",
-          "ap2ID": "id-3095"
         }
       ],
       "fileTypeVersion": 1
